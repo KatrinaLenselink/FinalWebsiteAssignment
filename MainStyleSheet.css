@@ -1,0 +1,920 @@
+/* https://www.w3schools.com/ - for overlay and calendar*/
+body
+{
+  background-color: #003300;
+}
+.wrapper /* main page wrapper */
+{
+  background-color:white;
+  width: 100%;
+  height: 1500px;
+  margin: 0px;
+}
+.page2wrapper /* product page needs to be longer */
+{
+  background-color:white;
+  width: 100%;
+  height: 2500px;
+  margin: 0px;
+}
+.page3wrapper /* page needs to be shorter */
+{
+  background-color:white;
+  width: 100%;
+  height: 1700px;
+  margin: 0px;
+}
+.header /* header for all pages */
+{
+  border-bottom: solid 10px #003300;
+  background-color: red;
+  color: white;
+  font-size: 100px;
+  width: 100%;
+  height: 160px;
+  text-align: center;
+  padding: inherit;
+  text-shadow: 3px 2px black;
+}
+.backtotop /* fixed button to bring back to top on all pages*/
+{
+  color: white;
+  border: 3px solid #003300;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+}
+.backtotop a /* link inside button */
+{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.navbars /* used on main page */
+{
+  color: white;
+  background: #003300;
+  text-shadow: 3px 2px black;
+  height: 1400px;
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+.subpageNavbar /*subpages need to be longer */
+{
+  color: white;
+  background: #003300;
+  text-shadow: 3px 2px black;
+  height: 2400px;
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+.navbar3 /* third page was different size*/
+{
+  color: white;
+  background: #003300;
+  text-shadow: 3px 2px black;
+  height: 1600px;
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+#menu /* describes the list inside the left nav bar */
+{
+  text-shadow: 3px 2px black;
+  color: white;
+  font-size: 70px;
+  text-align:center;
+}
+#menu a
+{
+  text-decoration: none;
+  color: white;
+}
+#hourTitle /* describes the right nav bar content */
+{
+  text-shadow: 3px 2px black;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+#hourDays
+{
+  text-shadow: 3px 2px black;
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  padding: 20px;
+}
+
+ul /* style of all lists */
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  font-size: 27px;
+  display: block;
+}
+li
+{
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: block;
+  text-align: left;
+}
+
+li a
+{
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-shadow: 3px 2px black;
+}
+li a:hover
+{
+  background-color:green;
+
+}
+*
+{
+  box-sizing:border-box;
+}
+
+.centercontent /* main page content */
+{
+  background-color:red;
+  height: 1400px;
+  float: left;
+    width: 70%;
+}
+
+.content /* product page content */
+{
+  background-color: white;
+  color: green;
+  float: right;
+  height: 2400px;
+  width: 85%;
+}
+.page3Content
+{
+  background-color: white;
+  color: green;
+  float: right;
+  height: 1600px;
+  width: 85%;
+}
+.centercountdown /* countdown to christmas */
+{
+background-color: green;
+border-top: solid 10px #003300;
+border-bottom: solid 10px #003300;
+color: white;
+font-size: 60px;
+text-align: center;
+height: 160px;
+width: 100%;
+text-shadow: 3px 2px black;
+padding-bottom: 20%;
+
+}
+.mainImg img{ /* style for just main page img */
+  width: 100%;
+  height: 350px;
+  border: solid 3px white;
+}
+.mainImg /* picture of store front on main page */
+{
+background-color: #ffffcc;
+color: #003300;
+font-size: 28px;
+height: 350px;
+width: 85%;
+margin: auto;
+text-align: justify;
+}
+.citation
+{
+  color: white;
+  position: absolute;
+  top: 793px;
+  font-size: 8px;
+  padding: 5px;
+
+}
+.centerbox1 /* used for about us and news on main page */
+{
+background-color:green;
+color: white;
+font-size: 28px;
+height: 350px;
+width: 85%;
+margin: auto;
+text-align: justify;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+.centerbox1 a /* used for news links */
+{
+  text-decoration: none;
+  color: #003300;
+
+}
+.newsparade /* first article that links to news page */
+{
+  background-image: url("https://cdn.vectorstock.com/i/thumb-large/93/81/christmas-border-with-snowflakes-vector-6589381.jpg");
+  color: #003300;
+  display: inline-block;
+  width: 32.49%;
+  height: 250px;
+  padding: 5px;
+  text-align: center;
+}
+.newstrees /* second article */
+{
+  background-image: url("https://t4.ftcdn.net/jpg/01/28/62/73/240_F_128627359_cvOA4DiKzuBrcjPvrIcJdYjVXTuwW1Wy.jpg");
+  color: black;
+  display: inline-block;
+  width: 32.49%;
+  height: 250px;
+  padding: 5px;
+  text-align: center;
+}
+.articleimg /* images in news articles */
+{
+  float: left;
+  clear: right;
+  padding: 5px;
+}
+.santacite /* citation for image */
+{
+  color: white;
+  position: absolute;
+  top: 600px;
+  font-size: 8px;
+  padding: 5px;
+}
+.treecite /* citation for image */
+{
+  color: white;
+  position: absolute;
+  top: 978px;
+  font-size: 8px;
+  padding: 5px;
+}
+.paradecite /* citation for image */
+{
+  color: white;
+  position: absolute;
+  top: 1365px;
+  font-size: 8px;
+  padding: 5px;
+}
+  .newssanta /* third article */
+{
+  background-image: url("https://cdn.vectorstock.com/i/thumb-large/93/81/christmas-border-with-snowflakes-vector-6589381.jpg");
+  color: black;
+  display: inline-block;
+  width: 32.49%;
+  height: 250px;
+  padding: 5px;
+  text-align: center;
+}
+.month
+{
+
+}
+.boxes /* product page and news boxes layout */
+{
+  background-color: green;
+  color: white;
+  font-size: 28px;
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  padding-left: 10px;
+  text-shadow: 2px 1px black;
+}
+.newsboxes /* for text inside news boxes */
+{
+  float: left;
+  color: white;
+  padding: 10px;
+}
+.clearfix::after /* kept the nav bars and content beside each other */
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* CALENDAR ON NEWS PAGE */
+* {box-sizing:border-box;}
+/* Month header */
+.month {
+    padding: 5px 15px;
+    width: 90%;
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    border-top: solid 5px white;
+    margin: auto;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    width: 90%;
+    padding: 10px 0;
+    background: #eee;
+    margin: auto;
+
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:20px;
+    color: red;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: green;
+    color: white !important
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/* SECOND PAGE SPECIFIC CSS */
+* /* to keep all boxes beside each other */
+{
+    box-sizing: border-box;
+}
+
+.column /* how many boxes across */
+{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.column img /* images inside these boxes */
+{
+width: 80%;
+height: 0%;
+}
+.column2  /* boxes across for second main box */
+{
+  float: left;
+  width: 25%;
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.column2 img /* second set of images */
+{
+  width: 80%;
+  height: 0%;
+}
+/* FIRST PICTURE - hover effect to show more information */
+.overlay {
+  position:absolute;
+  top: 360px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 25%;
+
+  height: 37%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay {
+  opacity: 1;
+}
+/* SECOND PICTURE - hover effect to show more information */
+.overlay2 {
+  position:absolute;
+  top: 360px;
+  bottom: 0%;
+  left: 39%;
+  right: 30%;
+
+  height: 37%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+
+.column:hover .overlay2 {
+  opacity: 1;
+}
+/* THIRD PICTURE - hover effect to show more information */
+.overlay3 {
+  position:absolute;
+  top: 360px;
+  bottom: 0%;
+  left: 58%;
+  right: 14%;
+
+  height: 37%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay3 {
+  opacity: 1;
+}
+/* FOURTH PICTURE - hover effect to show more information */
+.overlay4 {
+  position:absolute;
+  top: 360px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 37%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay4 {
+  opacity: 1;
+}
+.text { /* text inside of hover boxes - same for all */
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* Clearfix (clear floats) */
+.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* new row of images */
+/* FIFTH PICTURE - hover effect to show more information */
+.overlay5 {
+  position:absolute;
+  top: 750px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay5 {
+  opacity: 1;
+}
+ /* SIXTH PICTURE - hover effect to show more information */
+.overlay6 {
+  position:absolute;
+  top: 750px;
+  bottom: 0%;
+  left: 39%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay6 {
+  opacity: 1;
+}
+/* SEVENTH PICTURE - hover effect to show more information */
+.overlay7 {
+  position:absolute;
+  top: 750px;
+  bottom: 0%;
+  left: 58%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay7 {
+  opacity: 1;
+}
+/* EIGHTH PICTURE - hover effect to show more information */
+.overlay8 {
+  position:absolute;
+  top: 750px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay8 {
+  opacity: 1;
+}
+/* new row of images */
+/* NINTH PICTURE - hover effect to show more information */
+.overlay9 {
+  position:absolute;
+  top: 1130px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay9 {
+  opacity: 1;
+}
+/* TENTH PICTURE - hover effect to show more information */
+.overlay10 {
+  position:absolute;
+  top: 1130px;
+  bottom: 0%;
+  left: 39%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay10 {
+  opacity: 1;
+}
+/* ELEVENTH PICTURE - hover effect to show more information */
+.overlay11 {
+  position:absolute;
+  top: 1130px;
+  bottom: 0%;
+  left: 58%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay11 {
+  opacity: 1;
+}
+/* TWELFTH PICTURE - hover effect to show more information */
+.overlay12 {
+  position:absolute;
+  top: 1130px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 35%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay12 {
+  opacity: 1;
+}
+/* new row of images */
+/* THIRTEENTH PICTURE - hover effect to show more information */
+.overlay13 {
+  position:absolute;
+  top: 1500px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay13 {
+  opacity: 1;
+}
+
+/* FOURTEENTH PICTURE - hover effect to show more information */
+.overlay14 {
+  position:absolute;
+  top: 1500px;
+  bottom: 0%;
+  left: 39%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay14 {
+  opacity: 1;
+}
+
+/* FIFTEENTH PICTURE - hover effect to show more information */
+.overlay15 {
+  position:absolute;
+  top: 1500px;
+  bottom: 0%;
+  left: 58%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay15 {
+  opacity: 1;
+}
+/* SIXTEENTH PICTURE - hover effect to show more information */
+.overlay16 {
+  position:absolute;
+  top: 1500px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay16 {
+  opacity: 1;
+}
+/* new row of images */
+/* SEVENTEENTH PICTURE - hover effect to show more information */
+.overlay17 {
+  position:absolute;
+  top: 1900px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay17 {
+  opacity: 1;
+}
+
+/* EIGHTEENTH PICTURE - hover effect to show more information */
+.overlay18 {
+  position:absolute;
+  top: 1900px;
+  bottom: 0%;
+  left: 39%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay18 {
+  opacity: 1;
+}
+
+/* NINETEENTH PICTURE - hover effect to show more information */
+.overlay19 {
+  position:absolute;
+  top: 1900px;
+  bottom: 0%;
+  left: 58%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay19 {
+  opacity: 1;
+}
+/* TWENTIETH PICTURE - hover effect to show more information */
+.overlay20 {
+  position:absolute;
+  top: 1900px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay20 {
+  opacity: 1;
+}
+/*new row of images */
+/* TWENTY-FIRST PICTURE - hover effect to show more information */
+.overlay21 {
+  position:absolute;
+  top: 2275px;
+  bottom: 0%;
+  left: 20.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay21 {
+  opacity: 1;
+}
+
+/* TWENTY-SECOND PICTURE - hover effect to show more information */
+.overlay22 {
+  position:absolute;
+  top: 2275px;
+  bottom: 0%;
+  left: 39%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay22 {
+  opacity: 1;
+}
+/* TWENTY-THIRD PICTURE - hover effect to show more information */
+.overlay23 {
+  position:absolute;
+  top: 2275px;
+  bottom: 0%;
+  left: 58%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003300;
+}
+.column:hover .overlay23{
+  opacity: 1;
+}
+/* TWENTY-FOURTH PICTURE - hover effect to show more information */
+.overlay24 {
+  position:absolute;
+  top: 2275px;
+  bottom: 0%;
+  left: 76.5%;
+  right: 23%;
+
+  height: 33%;
+  width: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+.column:hover .overlay24{
+  opacity: 1;
+}
+/*ending of page logo */
+.endingbox
+{
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  height: 150px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  text-shadow: 2px 1px black;
+}
+
+/* regular css used for all pages below */
+
+.footer /* contact info at the bottom of all pages */
+{
+background-color: green;
+color: white;
+text-shadow: 3px 2px black;
+height: 140px;
+border-bottom: solid 10px #003300;
+text-align: center;
+}
+.address /* address information */
+{
+  float: left;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 155px;
+  padding-top: 0px;
+}
+.contactus /* contact information */
+{
+  float: right;
+  text-align: left;
+  font-size: 20px;
+  padding-right: 80px;
+  padding-top: 0px;
+}
+
+.stringlights /* image between address and contact */
+{
+  float: left;
+  padding-left: 360px;
+  width: 0px;
+  height: 0px;
+  clear: both;
+  margin: auto;
+}
